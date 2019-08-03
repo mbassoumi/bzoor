@@ -164,9 +164,15 @@ return [
                 [
                     'text' => 'Equation',
                     'icon' => 'money',
-                    'url'  => '#',
+                    'url'  => 'admin/settings/equation',
                     'icon_color' => 'red',
-                ]
+                ],
+                [
+                    'text' => 'Roles',
+                    'icon' => 'flag-checkered',
+                    'url'  => 'admin/settings/roles',
+                    'icon_color' => 'green',
+                ],
             ]
         ]
     ],

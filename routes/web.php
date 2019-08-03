@@ -21,3 +21,21 @@ Route::get('/test', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::group(['prefix' => 'admin'], function (\Illuminate\Routing\Router $router){
+
+    $router->group(['prefix'=> 'settings'], function (\Illuminate\Routing\Router $router){
+
+        $router->get('roles', function (){
+           dd('role ssss');
+        })->name('setting.role.index');
+        $router->get('equation', function (){
+           dd('get equation');
+        });
+
+
+    });
+
+});
