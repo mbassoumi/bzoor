@@ -13,10 +13,13 @@ class RoleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(RoleDataTable $dataTable)
+    public function index(Request $request, RoleDataTable $dataTable)
     {
         $datatable = $dataTable->run();
-//        dd($datatable);
+
+        if ($request->wantsJson()){
+            return $datatable;
+        }
         return view('setting.role.index', ['datatable' => $datatable]);
     }
 

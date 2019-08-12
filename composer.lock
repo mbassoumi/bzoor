@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mbassoumi/BassoumiDataTable.git",
-                "reference": "f4964efbab170a96d743bd6324faedda37cf1cc6"
+                "reference": "18ba022bff01a584d2f224a547d7ed6ea1fe52e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mbassoumi/BassoumiDataTable/zipball/f4964efbab170a96d743bd6324faedda37cf1cc6",
-                "reference": "f4964efbab170a96d743bd6324faedda37cf1cc6",
+                "url": "https://api.github.com/repos/mbassoumi/BassoumiDataTable/zipball/18ba022bff01a584d2f224a547d7ed6ea1fe52e4",
+                "reference": "18ba022bff01a584d2f224a547d7ed6ea1fe52e4",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 }
             ],
             "description": "Easy way to use datatable",
-            "time": "2019-08-12T00:53:50+00:00"
+            "time": "2019-08-12T02:16:41+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

@@ -4,18 +4,21 @@
 namespace App\Http\DataTables;
 
 
-use App\User;
+use App\Http\Resources\RoleResource;
+use App\Role;
 use Bassoumi\BassoumiDataTable\Classes\BassoumiDataTable;
 use Illuminate\Database\Eloquent\Builder;
 
 class RoleDataTable extends BassoumiDataTable
 {
 
-    protected $ajaxUrl = 'majd';
+    protected $ajaxUrl = '';
 
     protected $dataTableName = 'Test Data Table';
 
     protected $popup = true;
+
+    protected $resourceClass = RoleResource::class;
 
 
     public function headings(): array
@@ -31,12 +34,6 @@ class RoleDataTable extends BassoumiDataTable
             ],
             [
                 'title' => 'Name',
-            ],
-            [
-                'title' => 'Has Car?',
-            ],
-            [
-                'title' => 'Email',
             ],
             [
                 'title' => 'Created At',
@@ -58,14 +55,6 @@ class RoleDataTable extends BassoumiDataTable
             [
                 'data' => 'name',
                 'name' => 'name'
-            ],
-            [
-                'data' => 'has_car',
-                'name' => 'has_car'
-            ],
-            [
-                'data' => 'email',
-                'name' => 'email'
             ],
             [
                 'data' => [
@@ -105,27 +94,6 @@ class RoleDataTable extends BassoumiDataTable
                 }
             ],
             [
-                'placeholder' => 'Search Car',
-                'name' => 'car',
-                'type' => 'select',
-                'selected' => null,
-                'operator' => '=',
-                'options' => [
-                    'yes',
-                    'no'
-                ],
-                'function' => function (Builder $query, $name, $value) {
-                    return $query;//->whereRaw($name, $value);
-                }
-            ],
-            [
-                'placeholder' => 'Search Email',
-                'name' => 'email',
-                'type' => 'email',
-                'value' => null,
-                'operator' => 'like',
-            ],
-            [
                 'placeholder' => 'Search Created At',
                 'name' => 'created_at',
                 'type' => 'daterange',
@@ -145,8 +113,6 @@ class RoleDataTable extends BassoumiDataTable
 
     public function query(): Builder
     {
-        // TODO: Implement query() method.
-
-        return User::query();
+        return Role::query();
     }
 }
