@@ -1,3 +1,4 @@
+
 @extends('adminlte::page')
 
 @section('title', 'Dashboard')
@@ -7,12 +8,12 @@
 @stop
 
 @section('content')
-    @for($i = 0 ; $i<100; $i++)
-    <p>Fuck Bzoor</p>
-    @endfor
+    {!! $datatable !!}
+
 @stop
 
 @section('css')
+
 @stop
 
 @section('js')

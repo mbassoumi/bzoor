@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\DataTables\RoleDataTable;
 use App\Role;
 use Illuminate\Http\Request;
 
@@ -12,9 +13,11 @@ class RoleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(RoleDataTable $dataTable)
     {
-        //
+        $datatable = $dataTable->run();
+//        dd($datatable);
+        return view('setting.role.index', ['datatable' => $datatable]);
     }
 
     /**
