@@ -115,7 +115,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'All Cars',
-                    'url'  => '#',
+                    'url'  => '/admin/cars/all-cars',
                     'icon' => 'car',
                     'icon_color' => 'blue',
                 ],

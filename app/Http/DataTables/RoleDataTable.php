@@ -5,7 +5,7 @@ namespace App\Http\DataTables;
 
 
 use App\Http\Resources\RoleResource;
-use App\Role;
+use App\Models\Role;
 use Bassoumi\BassoumiDataTable\Classes\BassoumiDataTable;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -28,7 +28,7 @@ class RoleDataTable extends BassoumiDataTable
             [
                 'title' => 'ID',
                 'style' => [
-                    'min-width' => '`100px',
+                    'min-width' => '100px',
                 ],
 
             ],

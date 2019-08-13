@@ -35,6 +35,14 @@ Route::group(['prefix' => 'admin'], function (\Illuminate\Routing\Router $router
 
     });
 
+    $router->group(['prefix' => 'cars'], function (\Illuminate\Routing\Router $router) {
+
+        $router->get('all-cars', 'CarController@index')->name('car.all-cars');
+
+    });
+
+
+
 });
 
 

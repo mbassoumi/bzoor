@@ -7,7 +7,6 @@
 
 @section('content')
     {!! $datatable !!}
-
 @stop
 
 @section('css')
