@@ -17,7 +17,7 @@ class RoleResource extends JsonResource
     {
         return [
             'id' => $this->id,
-//            'popup_url' => route('majd-dummy-show', ['id' => $this->id]),
+            'popup_url' => '/majd2',
             'name' => $this->name,
             'guard_name' => $this->email,
             'created_at' => [

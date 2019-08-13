@@ -14,7 +14,7 @@ class RoleDataTable extends BassoumiDataTable
 
     protected $ajaxUrl = '';
 
-    protected $dataTableName = 'Test Data Table';
+    protected $dataTableName = 'Roles';
 
     protected $popup = true;
 

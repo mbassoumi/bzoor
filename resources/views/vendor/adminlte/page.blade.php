@@ -116,6 +116,8 @@
             <section class="content">
 
                 @yield('content')
+{{--                @include('datatable_popup')--}}
+
 
             </section>
             <!-- /.content -->
