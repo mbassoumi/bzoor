@@ -20,8 +20,10 @@
                     $('#{!! $table_id !!} .table-search-bar input, #{!! $table_id !!} .table-search-bar select').each(
                         function (index) {
                             var key = $(this).attr('name');
+                            var id = $(this).attr('id');
                             var classes = $(this).attr('class');
-                            var value = $("input[name='" + key + "']").val();
+                            // var value = $("input[name='" + key + "']").val();
+                            var value = $("#"+id).val();
                             if (classes.indexOf('daterange') >= 0){
                                 value = getDateRangeValueAsArray(value);
                             }

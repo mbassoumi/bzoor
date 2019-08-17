@@ -5,6 +5,7 @@
                 {!! Form::text("search[{$filter['name']}]",
                         $filter['value'],
                         [
+                            'id' => "search_{$filter['name']}",
                             'class'=>'form-control form-filter datatable-filter input-sm',
                             'placeholder' => "{$filter['placeholder']}",
                             'style' => 'width:100%'])
@@ -13,6 +14,7 @@
                 {!! Form::number("search[{$filter['name']}]",
                             $filter['value'],
                             [
+                                'id' => "search_{$filter['name']}",
                                 'class'=>'form-control form-filter datatable-filter input-sm',
                                 'placeholder' => "{$filter['placeholder']}",
                                 'style' => 'width:100%'])
@@ -21,6 +23,7 @@
                 {!! Form::date("search[{$filter['name']}]",
                             $filter['value'],
                             [
+                                'id' => "search_{$filter['name']}",
                                 'class'=>'form-control form-filter datatable-filter input-sm',
                                 'placeholder' => "{$filter['placeholder']}",
                                 'style' => 'width:100%'])
@@ -29,6 +32,7 @@
                 {!! Form::text("search[{$filter['name']}]",
                         $filter['value'],
                         [
+                            'id' => "search_{$filter['name']}",
                             'class'=>'form-control form-filter datatable-filter input-sm daterange',
                             'placeholder' => "{$filter['placeholder']}",
                             'style' => 'width:100%'])
@@ -37,6 +41,7 @@
                 {!! Form::text("search[{$filter['name']}]",
                             $filter['value'],
                             [
+                                'id' => "search_{$filter['name']}",
                                 'class'=>'form-control form-filter datatable-filter input-sm',
                                 'placeholder' => "{$filter['placeholder']}",
                                 'style' => 'width:100%'])
@@ -46,6 +51,7 @@
                             $filter['options'],
                             $filter['selected'],
                             [
+                                'id' => "search_{$filter['name']}",
                                 'class'=>'form-control form-filter datatable-filter input-sm',
                                 'placeholder' => "{$filter['placeholder']}",
                                 'style' => 'width:100%'])

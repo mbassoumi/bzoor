@@ -82,11 +82,11 @@ class AllCarsDataTable extends BassoumiDataTable
             ],
             [
                 'data' => 'model',
-                'name' => 'car_model_id'
+                'name' => 'car_model_parent_id'
             ],
             [
                 'data' => 'sub_model',
-                'name' => 'car_model_parent_id'
+                'name' => 'car_model_id'
             ],
             [
                 'data' => 'model_year',
@@ -143,7 +143,7 @@ class AllCarsDataTable extends BassoumiDataTable
             ],
             [
                 'placeholder' => 'Search Model',
-                'name' => 'car_model_id',
+                'name' => 'car_model_parent_id',
                 'type' => 'select',
                 'selected' => null,
                 'operator' => '=',
@@ -153,7 +153,7 @@ class AllCarsDataTable extends BassoumiDataTable
             ],
             [
                 'placeholder' => 'Search Sub Model',
-                'name' => 'car_model_parent_id',
+                'name' => 'car_model_id',
                 'type' => 'select',
                 'selected' => null,
                 'operator' => '=',

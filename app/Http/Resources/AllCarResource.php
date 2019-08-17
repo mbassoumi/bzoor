@@ -16,6 +16,7 @@ class AllCarResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'popup_url' => route('car.show', ['car' => $this->id]),
             'model' => $this->car_model_parent_id,
             'sub_model' => $this->car_model_id,
             'model_year' => $this->model_year,

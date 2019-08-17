@@ -18,6 +18,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/vendor/Ionicons/css/ionicons.min.css') }}">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+{{--    <script src="https://kit.fontawesome.com/4e19337439.js"></script>--}}
 
 @if(config('adminlte.plugins.select2'))
     <!-- Select2 -->
